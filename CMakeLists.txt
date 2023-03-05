@@ -6,7 +6,6 @@ set(CMAKE_CURRENT_SOURCE_DIR source/)
 
 set(SOURCES source/main.cpp
             source/game.cpp
-            source/level.cpp
             source/item.cpp)
             source/level.cpp
             source/entity.cpp)
