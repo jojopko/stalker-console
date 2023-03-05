@@ -22,8 +22,9 @@ struct Entity {
     int x; 
     int y; 
     int hp; // здоровье
-    int armor[4]; // head, body, foot и еще чтото было
+    int* armor; // head, body, foot и еще чтото было
     
 };
 
+Entity* SpawnEntity(EntityType type, int* armor, int x, int y, int hp);
 #endif
