@@ -1,6 +1,7 @@
 #include "game.h"
 #include "level.h"
 
+// функция main
 int main() {
     Level *current_level = init_level();
     Item *items_on_level = init_items();
