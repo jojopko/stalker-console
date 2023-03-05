@@ -6,9 +6,9 @@
 #define INVENTORY_SIZE 9
 
 enum EntityType {
-    Player,
-    Friendly,
-    Bandit
+    PLAYER,
+    FRIENDLY,
+    BANDIT
     // ... по мере поступления
 };
 

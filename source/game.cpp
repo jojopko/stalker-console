@@ -1,5 +1,6 @@
 #include "game.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 struct GameStatus {
     int step;
@@ -23,7 +24,7 @@ Item * init_items() {
 }
 
 Entity * init_entities() {
-    return (Item *) malloc(sizeof(Entity));
+    return (Entity *) malloc(sizeof(Entity));
 }
 
 void update_game() {
@@ -31,11 +32,11 @@ void update_game() {
 }
 
 int get_steps() {
-
+    return game_status->step;
 }
 
 bool do_run() {
-
+    return game_status->is_running;
 }
 
 
