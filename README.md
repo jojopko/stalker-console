@@ -22,7 +22,9 @@ struct Inventory {
     int cash; // деньги
     Item items[]; // предметы
 }
+``
 
+``
 struct Item {
     int id; // Уникальный код
     int type; // Тип предмета (аптечка, оружие и тд)
