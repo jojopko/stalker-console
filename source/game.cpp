@@ -24,7 +24,7 @@ Item * init_items() {
 }
 
 Entity * init_entities() {
-    return (Entity *) malloc(sizeof(Entity));
+    return (Entity *) malloc(sizeof(Entity)); // FIX ME
 }
 
 void update_game() {
