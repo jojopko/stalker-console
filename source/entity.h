@@ -27,4 +27,7 @@ struct Entity {
 };
 
 Entity* SpawnEntity(EntityType type, int* armor, int x, int y, int hp);
+
+bool movePlayer(Entity* Player, const Level* level, int dx, int dy);
+
 #endif
