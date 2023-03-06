@@ -8,7 +8,8 @@ set(SOURCES source/main.cpp
             source/game.cpp
             source/item.cpp
             source/level.cpp
-            source/entity.cpp)
+            source/entity.cpp
+            source/camera.cpp)
 
 set(HEADERS source/game.h
             source/entity.h
