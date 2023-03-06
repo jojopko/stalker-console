@@ -16,13 +16,13 @@ void load_level(const char * filename, Level * level) {
     }
 
     int w, h;
-    fscanf(fp, "%d %d", &w, &h);
+    fscanf(fp, "%d %d\n", &w, &h);
     
     level->field = (Cell *) malloc(sizeof(Cell) * w * h);
     level->width = w;
     level->height = h;
 
-    for (int i = 0; i < h && feof(fp); i++) {
+    for (int i = 0; i < h && !feof(fp); i++) {
         fgets(buffer, buffer_size, fp);
         for (int j = 0; j < w; j++) {
             char c = buffer[j];
@@ -54,11 +54,11 @@ void load_level(const char * filename, Level * level) {
 void draw_level(const Level *level) {
     int w = level->width, 
         h = level->height;
-    for (int i = 0; i < w; i++) {
-        for (int j = 0; j < h; j++) {
-            putc(level->field[i * w + j].texture, stdout);
+    for (int i = 0; i < h; i++) {
+        for (int j = 0; j < w; j++) {
+            putchar(level->field[i * w + j].texture);
         }
-        putc('\n', stdout);
+        putchar('\n');
     }
 }
 
