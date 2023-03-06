@@ -7,8 +7,6 @@
 
 #define MAX_ENTITIES_ON_LEVEL 64
 #define MAX_ITEMS_ON_LEVEL 1024
-#define CAMERA_WIDTH 100
-#define CAMERA_HEIGHT 30
 
 void update_game();
 Level * init_level();
