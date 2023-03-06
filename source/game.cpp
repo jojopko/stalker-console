@@ -20,11 +20,11 @@ Level * init_level() {
 }
 
 Item * init_items() {
-    return (Item *) malloc(sizeof(Item));
+    return (Item *) malloc(sizeof(Item) * MAX_ITEMS_ON_LEVEL);
 }
 
 Entity * init_entities() {
-    return (Entity *) malloc(sizeof(Entity)); // FIX ME
+    return (Entity *) malloc(sizeof(Entity) * MAX_ENTITIES_ON_LEVEL); 
 }
 
 void update_game() {
