@@ -2,6 +2,7 @@
 #define _ITEM_H_
 
 #include <stdlib.h>
+#include <stdio.h>
 #include "coloredtext.h"
 
 enum ItemType {
